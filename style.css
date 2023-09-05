@@ -1,0 +1,428 @@
+body {
+    font-family: Arial, sans-serif;
+ width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  } 
+  .frame{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    margin-top: 0;
+    pointer-events: none;
+  }
+  .top-panel{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #202124;
+    border-bottom: 1px solid #36373a;
+    pointer-events: all;
+    
+  }
+  ul {
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #202124;
+    margin-left: 100px;
+  }
+  
+  li {
+    float: left;
+    padding: 8px 12px;
+  
+  }
+  
+  li a{
+   display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+  
+  }
+  .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 8px 14px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    background-color: #e73737;
+    
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+   
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+ 
+.icon-link {
+  display: block;
+  align-items: center;
+  background-color: #e73737;
+padding: 1px;
+}
+.icon-links {
+  display: block;
+  align-items: center;
+  background-color: #e73737;
+padding: 15px;
+
+}
+#navi{
+  align-items: center;
+  margin-left: 10px;
+
+}
+.left-panel{
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px 0;
+  width: 63px;
+  height: calc(100vh - 90px);
+  background-color: #202124;
+  border-right: 1px solid #36373a;
+  pointer-events: all;
+  margin-top: 70px;
+}
+/* vertical navbar*/
+.vertical-navbar{
+  align-items:center;
+      margin-top: 5%;
+      background: #161515;
+    padding: 10px;
+      width: 300px;
+    transform: rotate(-90deg) translateX(-140px);
+    text-align: right;
+    color: hsla(0,0%,100%,.9);
+    }
+  .image {
+    display: block;
+  left: 70%;
+    overflow: hidden;
+    position: fixed;
+   margin-top: -9.5%;
+   height: 100%;
+   width: 30%;
+  }
+  
+  .content {
+   /*content starts below the fixed header */
+    overflow: hidden;
+    text-align: center;
+    width: 64.2%;
+    margin-left: 72px;
+    overflow: hidden;
+    padding-top: 15%;
+    background-color: rgb(244, 236, 236);
+  }  
+    .content group-683 {
+      justify-content: center;
+      align-items: center;
+      }
+      .ellipse-1 {
+       display: block;
+       margin-left: 0;
+       margin-right: 0;
+       width: 200px;
+       height: 200px;
+       align-items: center;
+      margin-left: 35%;
+      }
+     #designer {
+        color: rgba(0, 0, 0, 1);
+        font-size: 16px;
+    padding: 5px;
+        font-family: Inter, sans-serif;
+        font-weight: 400;
+
+      }
+      #logical-business-analy {
+      margin-top: 10px;
+        font-size: 16px;
+       font-family: 'Courier New', Courier, monospace;
+       margin-left: 0.7%;
+        font-weight: 300;
+      }
+      .service {
+      margin-top: 10%;
+      }
+/*service accordion*/
+    .accordion-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-left: 0;
+        margin-right: 0;
+      flex-wrap: wrap;
+    }
+      .accordion {
+        background-color: #eee;
+        color: #090808;
+        cursor: pointer;
+        padding: 10px;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+       display:inline;
+      max-width: 20%;
+      
+      }
+      
+      .active, .accordion:hover {
+        background-color: #ccc; 
+      }
+      
+      .panel {
+        padding: 0 ;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+       
+      }
+    .panel p {
+        margin: 0;
+        display: block;
+    }
+    
+  .lge{
+    margin-top: 10%;
+  }
+  .lge p {
+    display: inline-block; 
+    padding: 50px;
+    
+  }
+  .ENGLISH{
+    text-align: left;
+    float: left;
+  }
+  .KINYARWANDA{
+    align-items: center;
+  }
+  .FRENCH {
+    text-align: right;
+    float: right;
+  }
+
+  
+  .hard{
+padding-top: 30px;
+padding: 100px;
+
+  }
+
+  .container-skills {
+    height: 20px;
+    width: -100px;
+    background-color: #ddd; 
+  }
+  
+  .skills {
+    text-align: center; 
+    color: white; 
+    width: 60%;
+    border-radius: 5px;
+  
+  }
+  .left-skills{
+   float: left; 
+  }
+  .html {width: 90%; background-color: #04AA6D;} 
+  .css {width: 80%; background-color: #2196F3;} 
+  .js {width: 65%; background-color: #f44336;} 
+  .CSS {width: 60%; background-color: #808080;}
+   
+  .right-skills{
+    float: right;
+  }
+  .pdf{
+ margin-top: 200px;
+   border: 1px solid;
+   width: 50%;
+   height: 50%;
+margin-left: 5px;
+}
+
+  .review-card{
+  box-shadow: 0 4px 6px 0;
+  transition: 0.3s;
+ width: 30%;
+align-items: center;
+justify-content: center;
+margin-left: 35%;
+  }
+ .avatar{
+    margin-top: 5%;
+    border-radius: 50%;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+ }
+  .review-card:hover{
+    box-shadow: 0 8px 10px 0;
+  }
+ .review-container{
+    padding: 2px 10px;
+ }
+ .Latest{
+    margin-top: 15%;
+ }
+ .column {
+    display: inline-block;
+    width: 35%;
+    margin-bottom: 16px;
+    padding: 50px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+ .end{
+    margin-top: 5%;
+    margin-bottom: 20%;
+ }
+  /*contact button*/
+  .contactButton {
+    background: #e73737;
+    color: white;
+    font-family: inherit;
+    padding: 0.45em;
+    padding-left: 1.0em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #e73737;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3em;
+   margin-left: 42%;
+   
+  }
+  
+  .iconButton {
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #e73737;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .contactButton:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em #e73737;
+  }
+  
+  .contactButton:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em #e73737;
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+        font-size: 16px; /* Decrease font size for smaller screens */
+    }
+
+    .frame {
+      
+        display: block; /* Hide the frame on smaller screens */
+    }
+
+    .top-panel {
+        height: 50px; /* Adjust height for smaller screens */
+    }
+
+    ul {
+        margin-left: 0; /* Remove margin on smaller screens */
+    }
+
+    li {
+        float: none; /* Make list items stack vertically on smaller screens */
+        padding: 8px 0; /* Adjust padding for smaller screens */
+        text-align: center; /* Center-align list items on smaller screens */
+    }
+
+    li a {
+        display: block; /* Make links full-width on smaller screens */
+        padding: 10px 0; /* Adjust padding for smaller screens */
+    }
+
+    .vertical-navbar {
+        display: none; /* Hide the vertical navbar on smaller screens */
+    }
+
+    .image {
+        display: none; /* Hide the image on smaller screens */
+    }
+
+    .content {
+        width: 100%; /* Make the content full-width on smaller screens */
+        margin-left: 0; /* Remove margin on smaller screens */
+    }
+    /* ... Add other responsive styles as needed */
+}
+
+
+
+
+
