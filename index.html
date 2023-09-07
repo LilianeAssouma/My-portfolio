@@ -5,49 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
-<div class="frame">
-  <div class="top-panel">
-    <a href="" class="icon-links">
-      <img src="assets/LA.png" alt="Icon" style="height: 34px;width: 32px;" >
-  </a> 
-    <ul>
-      <li class="dropdown" id="navi">
-        <a href="javascript:void(0)" class="dropbtn">Home</a>
-        <div class="dropdown-content">
-          <a href="#SERVICES">SERVICES</a>
-          <a href="#projects">PROJECTS</a>
-          <a href="#resume">RESUME</a>
-        </div>
-      </li>
-      <li id="navi"><a href="C:\Users\HP\Desktop\Portfolio\other pages\contact.html">Contact</a></li>
-      <li id="navi" class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Blog</a>
-        <div class="dropdown-content">
-          <a href="C:\Users\HP\Desktop\Portfolio\other pages\about.html">About</a>
-          <a href="#">Blog list</a>
-        </div>
-      </li>
-      <li id="navi"><a href="#other">Others</a></li>
-      <li style="float:right" class="icon-link">
-        <a href="mailto:lilyanassoum@gmail.com">
-          <img src="assets/SVG.png" alt="Envelope Icon" >
-      </a>
-      </li>
-    </ul>
-  </div>
-  <div class="left-panel">
-    <a href="C:\Users\HP\Desktop\Portfolio\index.html" class="vertical-navbar">HOMEPAGE</a>
-  </div>
-</div>
+  <div class="header">
+    <div class="top-panel">
+
+      <ul>
+        <li style="float:left" class="icon-link">
+          <a href="">
+              <img src="assets\LA.png" alt="Icon"  style="height: 30px;width: 30px;" >
+        </a>
+        </li>
+        <li class="dropdown" id="navi">
+          <a href="C:\Users\HP\Desktop\Portfolio\index.html" class="dropbtn">Home</a>
+          <div class="dropdown-content">
+            <a href="#SERVICES">SERVICES</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#resume">RESUME</a>
+          </div>
+        </li>
+        <li id="navi"><a href="C:\Users\HP\Desktop\Portfolio\other pages\inde2.html">Contact</a></li>
+        <li id="navi" class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Blog</a>
+          <div class="dropdown-content">
+            <a href="C:\Users\HP\Desktop\Portfolio\other pages\index3.html">About</a>
+            <a href="#">Blog list</a>
+          </div>
+        </li>
+        <li id="navi"><a href="#other">Others</a></li>
+        <li style="float:right" class="icon-link">
+          <a href="mailto:lilyanassoum@gmail.com">
+            <img src="assets/SVG.png" alt="Envelope Icon" >
+        </a>
+        </li>
+      </ul>
+    </div>
+    <div class="left-panel">
+      <a href="C:\Users\HP\Desktop\Portfolio\index.html" class="vertical-navbar">HOMEPAGE</a>
+    </div>
+    </div>
     <div class="content">
         <img src="assets\background.PNG" class="image" alt="">
         <p id="hello-welcome-to-my-home">HELLO, WELCOME TO MY HOME PAGE<br>MY NAME IS</p>
         <h1 id="name">MUSABE LILIANE ASSOUMA</h1>
             <img src="assets\/image0.png" alt="Not Found" class="ellipse-1">
-            <p id="designer">I’m a ui/ux designer&business analyst</p>
+            <p id="designer">I’m a ui/ux designer,web developer&business analyst</p>
             <p id="logical-business-analy">
                 Logical Business Analyst and software developer bringing<br>
                 experience with system implementation and information,<br> technology
@@ -56,20 +58,39 @@
                 suitable technical solutions.
             </p>
           <div class="service" id="SERVICES">
-            <h1 id="SERVICES">SERVICES</h1>                
+            <h1 id="serv-s" >SERVICES</h1> 
+            <div class="row">
+              <div class="column">
+                <span class="center">ui/ux designer</span>
+                <p>Elevate online presence with captivating user interfaces and seamless experiences</p>
+              </div>
+              <div class="column">
+                  <span class="center">LOG Designer</span>
+                  <p>Establish a strong and cohesive brand identity that resonates with your audience.</p>
+              </div>
+              <div class="column ">
+                  <span class="center">BRANDING</span>
+                  <p>All of which have a singular goal: to build environments where our clients thrive</p>
+              </div>
+          </div>               
             <div class="accordion-container">
-                <button class="accordion">UI/UX Designer</button>
+                <button class="accordion">Website Development</button>
                 <div class="panel">
-                    <p>Elevate online presence with captivating user interfaces and seamless experiences</p>
+  
+                    <p>
+                      Website Design: Creating unique and visually appealing website designs tailored to the client's brand.
+                      Front-End Development: Building the user interface (UI) of websites using HTML, CSS, and JavaScript.
+                      Back-End Development: Developing server-side logic, databases, and APIs using languages like Python, PHP, Ruby, or Node.js.
+                    </p>
                 </div>
                 
-                <button class="accordion">LOG Designer</button>
+                <button class="accordion">E-Commerce Development</button>
                 <div class="panel">
-                    <p>Establish a strong and cohesive brand identity that resonates with your audience.</p>
+                    <p>Building online stores with features like product catalogs, shopping carts, and secure payment gateways.</p>
                 </div>
-                <button class="accordion">BRANDING</button>
+                <button class="accordion">Website Maintenance and Support</button>
                 <div class="panel">
-                    <p>All of which have a singular goal: to build environments where our clients thrive</p>
+                    <p>Providing ongoing maintenance, updates, and technical support to keep websites secure and up-to-date.</p>
                 </div>
         </div>
           </div>
@@ -164,6 +185,103 @@
 
     </div>
     
-    <script src="script.js"></script>
+  
+    
+    <script>
+      function myFunction() {
+    // Toggle the responsive navigation menu
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+
+function openPopup(popupId) {
+    // Display the specified popup
+    var popup = document.getElementById(popupId);
+    if (popup) {
+        popup.style.display = "block";
+    }
+}
+
+function closePopup(popupId) {
+    // Close the specified popup
+    var popup = document.getElementById(popupId);
+    if (popup) {
+        popup.style.display = "none";
+    }
+}
+//navigation within the body
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Smooth scroll behavior for anchor links
+    const links = document.querySelectorAll('a[href^="SERVICES"]');
+    for (const link of links) {
+        link.addEventListener("click", smoothScroll);
+    }
+
+    function smoothScroll(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute("href").substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: "smooth",
+        });
+    }
+});
+
+       /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+       function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      /*accordion on services good*/
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+              document.addEventListener("DOMContentLoaded", function () {
+          // Get the contact button element by its ID
+          const contactButton = document.getElementById("contact-button");
+      
+          // Add a click event listener to the contact button
+          contactButton.addEventListener("click", function () {
+              // Display an alert when the button is clicked
+              alert("Contact button clicked!");
+          });
+      });
+      
+      
+                      // JavaScript to toggle accordion content
+                      const accordions = document.querySelectorAll('.accordion');
+              
+                      accordions.forEach(accordion => {
+                          const heading = accordion.querySelector('h2');
+                          const content = accordion.querySelector('p');
+              
+                          heading.addEventListener('click', () => {
+                              content.classList.toggle('active');
+                          });
+                      });
+
+    </script>
 </body>
 </html>

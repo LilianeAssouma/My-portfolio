@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="cont.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+   
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+</head>
+<body>
+  <div class="header">
+    <div class="top-panel">
+
+      <ul>
+        <li style="float:left" class="icon-link">
+          <a href="">
+              <img src="assets\LA.png" alt="Icon"  style="height: 30px;width: 30px;" >
+        </a>
+        </li>
+        <li class="dropdown" id="navi">
+          <a href="C:\Users\HP\Desktop\Portfolio\index.html" class="dropbtn">Home</a>
+          <div class="dropdown-content">
+            <a href="C:\Users\HP\Desktop\Portfolio\index.html">SERVICES</a>
+            <a href="#projects">PROJECTS</a>
+            <a href="#resume">RESUME</a>
+          </div>
+        </li>
+        <li id="navi"><a href="C:\Users\HP\Desktop\Portfolio\other pages\inde2.html">Contact</a></li>
+        <li id="navi" class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Blog</a>
+          <div class="dropdown-content">
+            <a href="C:\Users\HP\Desktop\Portfolio\other pages\index3.html">About</a>
+            <a href="#">Blog list</a>
+          </div>
+        </li>
+        <li id="navi"><a href="#other">Others</a></li>
+        <li style="float:right" class="icon-link">
+          <a href="mailto:lilyanassoum@gmail.com">
+            <img src="assets/SVG.png" alt="Envelope Icon" >
+        </a>
+        </li>
+      </ul>
+    </div>
+    <div class="left-panel">
+      <a href="C:\Users\HP\Desktop\Portfolio\index.html" class="vertical-navbar">HOMEPAGE</a>
+    </div>
+    </div>
+   <div class="us">
+    <h1 style="margin-top: -10px;">CONTACT US</h1>
+    <p >HELLO, THERE!<span>LET'S GET IN TOUCH</span></p> 
+   </div>
+<div class="content">   
+    <div class="container-1">
+        <form class="contactForm" id="contactForm">
+            <label for="names">Names</label>
+            <input type="text" id="names" name="fullnames" placeholder="Enter your full names"><br>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email"><br>
+           <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Message"></textarea><br>
+            <input type="submit" value="Submit">
+          </form>
+    </div>  
+    <div class="container-2">
+      <div class="location">
+        <div id='address' class='address'>
+            <img class="map" id="map" src="assets/ph_map-pin-duotone.png">
+            Address: Kigali RWANDA
+            Street, KN 20 Avenue NYAKABANDA
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.4517488450124!2d30.046046373996976!3d-1.973523736761376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca5c17b0dd79d%3A0x49177c0331f4bc45!2sNyakabanda%20Sector%20Office!5e0!3m2!1sen!2srw!4v1694033334184!5m2!1sen!2srw" 
+            width="60" height="75" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+           <div class="phone">
+            <i class="fa-solid fa-phone"></i>
+            <phone style="color: white;">+250783815270</phone>
+           </div>   
+       
+           <div class='email'>
+            Email:
+            <a href="mailto:lilyanassoum@gmail.com">
+                lilyanassoum@gmail.com
+            </a> 
+        </div>
+        <div class="social">
+            <p id="more">For more informtaion you can visit my social media</p>                
+            <div class="fa-bands">
+                <a href="https://www.linkedin.com/feed/ " class="icon-links">
+                    <i class="fa-brands fa-linkedin" style="color: #1a6eff;"></i>
+                </a>
+                <a href="https://web.facebook.com/?_rdc=1&_rdr" class="icon-links">
+            <i class="fa-brands fa-facebook" style="color: #1a6eff;"></i>
+                </a>
+                <a href="https://twitter.com/home" class="icon-links">
+            <i class="fa-brands fa-square-twitter" style="color: #0f60eb;"></i>
+                </a>
+                <a href="https://github.com/" class="icon-links">
+            <i class="fa-brands fa-github" style="color: #141414;"></i>
+                </a>
+            </div>
+        </div>
+      </div>
+    </div> 
+    
+</div>
+<!-- JavaScript -->
+<script>
+
+// JavaScript to toggle dropdown menu visibility
+const dropdowns = document.querySelectorAll('.dropdown');
+dropdowns.forEach((dropdown) => {
+const dropbtn = dropdown.querySelector('.dropbtn');
+const dropdownContent = dropdown.querySelector('.dropdown-content');
+
+dropbtn.addEventListener('click', () => {
+  dropdownContent.classList.toggle('show');
+});
+
+// Close the dropdown if the user clicks outside of it
+window.addEventListener('click', (event) => {
+  if (!event.target.matches('.dropbtn')) {
+    dropdownContent.classList.remove('show');
+  }
+});
+});
+
+//form
+    document.addEventListener("DOMContentLoaded", function() {
+
+        //
+      document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      // form values
+      const fullName = document.getElementById("names").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      //form validation
+      if (fullName.trim() === "" || email.trim() === "" || message.trim() === "") {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      // confirmation pop-up
+      const confirmation = confirm("Are you sure you want to submit this form?");
+
+      if (confirmation) {
+        // You can add the code here to send the form data to your server
+        // For example, you can use the fetch API to make a POST request to your server.
+        // Replace 'your_server_url' with the actual URL where your server-side script is located.
+        fetch('https://mail.google.com/mail/u/0/#inbox', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ fullName, email, message })
+        })
+        .then(response => {
+          if (response.ok) {
+            alert("Form submitted successfully!");
+            document.getElementById("contactForm").reset(); // Clear the form
+          } else {
+            alert("Form submission failed. Please try again later.");
+          }
+        })
+        .catch(error => {
+          console.error("Error:", error);
+          alert("An error occurred while submitting the form. Please try again later.");
+        });
+      }
+    });
+});
+
+   
+  </script>
+    
+   
+</body>
+</html>
